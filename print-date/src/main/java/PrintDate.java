@@ -1,7 +1,19 @@
-import java.util.Date;
-
 public class PrintDate {
+
+	private Printer printer;
+	private Calendar calendar;
+
+	public PrintDate(Printer printer, Calendar calendar) {
+		this.printer = printer;
+		this.calendar = calendar;
+	}
+
+	public PrintDate() {
+		this.printer = new ConsolePrinter();
+		this.calendar = new Calendar();
+	}
+
 	public void printCurrentDate() {
-		System.out.println(new Date());
+		printer.print(calendar.getCurrentDate());
 	}
 }
