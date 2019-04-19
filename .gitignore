@@ -4,3 +4,8 @@
 .idea
 *.iml
 target
+
+*/\.settings/
+*/src/test/\.DS_Store
+*/src/\.DS_Store
+*/\.DS_Store
